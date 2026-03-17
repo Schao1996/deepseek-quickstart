@@ -149,6 +149,7 @@ c.ServerApp.ip = '*'
 ```shell
 # 其中PASSWORD，表示Jupyter Lab登录时输入的Token，可以替换为你自定义的Token
 $ nohup jupyter lab --port=8000 --NotebookApp.token='PASSWORD' --notebook-dir=./ &
+nohup jupyter lab --port=8000 --NotebookApp.token='PASSWORD' --notebook-dir=./ --no-browser --ip=0.0.0.0 &
 ```
 
 
